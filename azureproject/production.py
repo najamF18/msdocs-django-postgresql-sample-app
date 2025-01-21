@@ -8,6 +8,7 @@ from .settings import BASE_DIR
 ALLOWED_HOSTS = [os.environ['WEBSITE_HOSTNAME']] if 'WEBSITE_HOSTNAME' in os.environ else []
 CSRF_TRUSTED_ORIGINS = ['https://' + os.environ['WEBSITE_HOSTNAME']] if 'WEBSITE_HOSTNAME' in os.environ else []
 DEBUG = False
+SECRET_KEY="c6bd78d759aa383ece1bb3d55c593b19829d3f7e553d8cb5b9e8918e9289e837"
 
 # WhiteNoise configuration
 MIDDLEWARE = [
